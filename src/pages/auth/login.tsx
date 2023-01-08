@@ -35,8 +35,8 @@ export default function Login({}: Props): ReactElement {
   }
 
   return (
-    <div className="w-full h-[100vh] bg-black flex flex-col justify-center items-center space-y-3">
-      <div className="w-[96%] md:w-[44%] lg:w-[32%] h-fit px-[27px] py-[30px] flex flex-col space-y-1 border border-gray-600 rounded-lg bg-inherit shadow-xl">
+    <div className="w-full h-[100vh] bg-[#111111] flex flex-col justify-center items-center space-y-3">
+      <div className="w-[96%] md:w-[44%] lg:w-[32%] h-fit px-[27px] py-[30px] flex flex-col space-y-1 border border-gray-600 rounded-lg bg-black shadow-xl">
         <form
           className="w-full h-fit px-[25px] py-[10px] flex flex-col space-y-7 rounded-md bg-inherit shadow-xl"
           onSubmit={handleSubmit}
@@ -86,9 +86,9 @@ export default function Login({}: Props): ReactElement {
           </div>
         </div>
         <div className="w-full ">
-          <p className='w-fit m-auto text-center text-gray-400'>
+          <p className="w-fit m-auto text-center text-gray-400">
             Not Signed up yet?{' '}
-            <span className='w-fit text-white hover:underline text-[19px]'>
+            <span className="w-fit text-white hover:underline text-[19px]">
               <Link href={'/auth/register'}>Register</Link>
             </span>
           </p>

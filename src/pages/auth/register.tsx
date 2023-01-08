@@ -41,9 +41,9 @@ export default function RegisterOrLogin({}: Props): ReactElement {
   }
 
   return (
-    <div className="w-full h-[100vh] bg-black flex flex-col justify-center items-center">
+    <div className="w-full h-[100vh] bg-[#111111] flex flex-col justify-center items-center">
       <form
-        className="w-[96%] md:w-[50%] lg:w-[32%] h-fit px-[25px] py-[50px] flex flex-col space-y-7 border border-gray-600 rounded-md bg-inherit shadow-xl"
+        className="w-[96%] md:w-[50%] lg:w-[32%] h-fit px-[25px] py-[50px] flex flex-col space-y-7 border border-gray-600 rounded-xl bg-black shadow-xl"
         onSubmit={handleSubmit}
       >
         <div className="w-full">
