@@ -6,8 +6,8 @@ interface Props {}
 
 export default function LoadingPage({}: Props): ReactElement {
   return (
-    <div className="w-full h-[100vh] fixed flex justify-center items-center">
-        <Lottie className='w-full' animationData={LoadingAnmim} />
+    <div className="w-[100vw]  h-[100vh] fixed flex justify-center items-center bg-black">
+      <Lottie className="w-[50vw] h-[50vh]" animationData={LoadingAnmim} />
     </div>
   )
 }

@@ -53,7 +53,7 @@ export const TextArea = (props: Props) => {
                   alt="my"
                 />
               ) : (
-                <RxAvatar className='text-white text-[20px]'/>
+                <RxAvatar className="text-white text-[20px]" />
               )}
               <p
                 key={`${Date.now().toString()}-${Math.random()}`}
