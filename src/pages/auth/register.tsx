@@ -2,6 +2,7 @@
 import axios, { AxiosResponse } from 'axios'
 import { signIn } from 'next-auth/react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { FormEvent, ReactElement, useState } from 'react'
 
 interface Props {}
@@ -18,6 +19,7 @@ interface Data {
 }
 
 export default function RegisterOrLogin({}: Props): ReactElement {
+  const router = useRouter()
   const [inputs, setInputs] = useState<Input>({
     name: '',
     email: '',
@@ -30,7 +32,9 @@ export default function RegisterOrLogin({}: Props): ReactElement {
     }
     try {
       const res: AxiosResponse<Data> = await axios.post('/api/register', inputs)
-      console.log(res.data)
+      if (res.data.status === 1) {
+        router.replace('/auth/login')
+      }
     } catch (error) {
       console.log(error)
     }

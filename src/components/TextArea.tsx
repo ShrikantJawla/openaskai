@@ -2,6 +2,7 @@
 import React from 'react'
 import { AllDataType } from '../pages/index'
 import { AiFillRobot } from 'react-icons/ai'
+import { RxAvatar } from 'react-icons/rx'
 import { useSession } from 'next-auth/react'
 
 interface Props {
@@ -45,12 +46,14 @@ export const TextArea = (props: Props) => {
         props.data.map((item, ind) => (
           <>
             <div className="flex w-[98%] md:w-[60%] m-auto items-center ">
-              {session && session.user && session.user.image && (
+              {session && session.user && session.user.image ? (
                 <img
                   className="w-[20px] h-[20px]"
                   src={session && session.user && session.user.image}
                   alt="my"
                 />
+              ) : (
+                <RxAvatar className='text-white text-[20px]'/>
               )}
               <p
                 key={`${Date.now().toString()}-${Math.random()}`}

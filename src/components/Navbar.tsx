@@ -24,9 +24,9 @@ export const Navbar = (props: Props) => {
               )}
               <p
                 onClick={() => signOut()}
-                className=" hidden md:flex text-red-600 text-[22px] p-[4px] px-3"
+                className=" hidden md:flex text-gray-400 text-[18px] p-[4px] px-3"
               >
-                Hi! {session.user?.name}
+                Hi! <span className='text-white ml-1 text-[22px] font-[700]'>{session.user?.name}</span>
               </p>
             </div>
             <p
