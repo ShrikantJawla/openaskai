@@ -49,7 +49,7 @@ export const TextArea = (props: Props) => {
                 <img
                   className="w-[20px] h-[20px]"
                   src={session && session.user && session.user.image}
-                  alt="me"
+                  alt="my"
                 />
               )}
               <p
