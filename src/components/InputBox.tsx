@@ -29,7 +29,7 @@ export default function InputBox(props: InputBoxProps) {
           wrap="hard"
           onChange={({ target: { value } }) => setInput(value)}
           placeholder="Enter you question here..."
-          className="max-w-[750px] min-w-[290px] scrollBar_hidden md:w-[750px] h-[52px] bg-inherit focus:outline-none text-white px-2 "
+          className="max-w-[750px] min-w-[290px] scrollBar_hidden md:w-[750px] h-[52px] bg-inherit focus:outline-none text-white px-2 placeholder:mt-1"
         />
         <IoSendSharp
           onClick={handleSubmit}
