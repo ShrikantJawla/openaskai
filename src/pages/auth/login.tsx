@@ -53,6 +53,7 @@ export default function Login({}: Props): ReactElement {
             onChange={({ target: { value } }) =>
               setInputs({ ...inputs, email: value })
             }
+            placeholder='Enter you Email'
           />
           <input
             className="h-[45px] rounded-md p-[6px] bg-inherit border text-white"
@@ -61,6 +62,7 @@ export default function Login({}: Props): ReactElement {
             onChange={({ target: { value } }) =>
               setInputs({ ...inputs, password: value })
             }
+            placeholder='Enter you Password'
           />
           <button
             className="w-[40%] m-auto text-white font-medium border border-gray-600 h-[45px] rounded-md"
