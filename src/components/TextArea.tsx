@@ -21,7 +21,7 @@ export const TextArea = (props: Props) => {
     let i = 0
     interval = setInterval(() => {
       if (i < props.data[props.data.length - 1]?.response.length) {
-        setText(props.data[props.data.length - 1]?.response.slice(0, i))
+        setText(props.data[props.data.length - 1]?.response.slice(0, i+1))
         i++
         scrollToBottom()
       } else clearInterval(interval)
